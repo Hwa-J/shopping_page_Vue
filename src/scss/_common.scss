@@ -77,4 +77,31 @@ body{
 .container{
   width:100%;
   min-height:calc(100vh - 10rem);
+	position: relative;
+}
+
+.btn {
+	padding: 10px 16px;
+	margin: 0 4px;
+	border-radius: 4px;
+	transition: .7;
+	font: {
+		size: 1.2em;
+		weight: 400;
+	}
+	&.main-color {
+		background-color: $color-main;
+		color: #fff;
+	}
+	&.main-color:hover {
+		background-color:$color-main--hover;
+	}
+}
+
+.input {
+	width: 400px;
+	// height: 52px;
+  padding: 17.5px 0 17.5px 16px;
+	border: 1px solid #c4c4c6;
+	border-radius: 4px;
 }

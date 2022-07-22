@@ -1,6 +1,6 @@
 <template>
   <TheHeader />
-  <section class="container">
+  <section class="container inner">
     <RouterView />
   </section>
   <TheFooter />

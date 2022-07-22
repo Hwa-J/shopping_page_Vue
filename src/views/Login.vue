@@ -1,27 +1,30 @@
 <template>
-  <h1>로그인</h1>
-  <form
-    class="login-form"
-    @submit.prevent>
-    <input
-      v-model="email"
-      class="user-id"
-      type="text"
-      placeholder="아이디 또는 이메일을 입력해주세요."
-      required />
+  <div class="login">
+    <h1>로그인</h1>
+    <form
+      class="login-form"
+      @submit.prevent>
+      <input
+        v-model="email"
+        class="user-id input"
+        type="text"
+        placeholder="아이디 또는 이메일을 입력해주세요."
+        required />
     
-    <input
-      v-model="password"
-      class="user-password"
-      type="password"
-      placeholder="비밀번호를 입력해주세요."
-      required />
+      <input
+        v-model="password"
+        class="user-password input"
+        type="password"
+        placeholder="비밀번호를 입력해주세요."
+        required />
     
-    <input
-      type="submit"
-      value="로그인"
-      @click="login" />
-  </form>
+      <input
+        class="btn main-color"
+        type="submit"
+        value="로그인"
+        @click="login" />
+    </form>
+  </div>
 </template>
 
 <script>
@@ -41,10 +44,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.login-form {
+.login {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  &-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .input {
+      margin: 8px 0;
+    }
+  }
 }
+
 input {
   width: 300px;
 }
