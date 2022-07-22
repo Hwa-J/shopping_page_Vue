@@ -7,6 +7,7 @@
       </div>
       <input
         v-model.trim="displayName"
+        class="input"
         type="text"
         maxlength="20" />
     </div>

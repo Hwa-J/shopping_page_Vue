@@ -7,6 +7,7 @@
       </div>
       <input
         v-model.trim="oldPassword"
+        class="input"
         type="password"
         placeholder="현재 비밀번호를 입력하세요."
         minlength="8"
@@ -18,6 +19,7 @@
       </div>
       <input
         v-model.trim="newPassword"
+        class="input"
         type="password"
         placeholder="비밀번호를 8자 이상 입력하세요."
         minlength="8"

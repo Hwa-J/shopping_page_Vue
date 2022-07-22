@@ -30,6 +30,9 @@
           <RouterLink to="/my-page">
             My-Page
           </RouterLink>
+          <RouterLink to="/admin">
+            Admin
+          </RouterLink>
           <RouterLink
             to="/"
             @click="logout">
